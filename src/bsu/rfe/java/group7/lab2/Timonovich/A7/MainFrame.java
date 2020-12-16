@@ -94,7 +94,7 @@ class MainFrame extends JFrame {
         Box hboxVariables = Box.createHorizontalBox();
         hboxVariables.setBorder(
                 BorderFactory.createLineBorder(Color.RED));
-        // hboxVariables.add(Box.createHorizontalGlue());
+        hboxVariables.add(Box.createHorizontalGlue());
         hboxVariables.add(labelForX);
         hboxVariables.add(Box.createHorizontalStrut(10));
         hboxVariables.add(textFieldX);
@@ -108,7 +108,7 @@ class MainFrame extends JFrame {
         hboxVariables.add(labelForZ);
         hboxVariables.add(Box.createHorizontalStrut(10));
         hboxVariables.add(textFieldZ);
-        // hboxVariables.add(Box.createHorizontalGlue());
+         hboxVariables.add(Box.createHorizontalGlue());
 
 // Создать область для вывода результата
         JLabel labelForResult = new JLabel("Результат:");
@@ -124,7 +124,7 @@ class MainFrame extends JFrame {
         hboxResult.add(labelForResult);
         hboxResult.add(Box.createHorizontalStrut(10));
         hboxResult.add(textFieldResult);
-        //hboxVariables.add(Box.createHorizontalStrut(100));
+        hboxVariables.add(Box.createHorizontalStrut(100));
         Box hboxSum = Box.createHorizontalBox();
         hboxSum.add(Box.createHorizontalGlue());
 
@@ -198,7 +198,7 @@ class MainFrame extends JFrame {
         hboxButtons.add(Box.createHorizontalGlue());
         hboxButtons.add(Box.createHorizontalStrut(30));
         hboxButtons.add(buttonSum);
-        //hboxButtons.add(Box.createHorizontalGlue());
+        hboxButtons.add(Box.createHorizontalGlue());
         hboxButtons.add(Box.createHorizontalStrut(30));
         hboxButtons.add(buttonMC);
         hboxButtons.add(Box.createHorizontalGlue());
